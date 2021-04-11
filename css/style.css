@@ -1,0 +1,231 @@
+/* цвет основного текста #212121 */
+
+/* цвет вторичного текста #757575 */
+
+/* белый цвет текста #ffffff */
+
+/* цвет ссылки в адресе rgba(255, 255, 255, 0.6) */
+
+/* акцент #2196F3 */
+
+/* вторичный цвет фона #F5F4FA */
+
+/* цвет фона герой и футер #2F303A */
+
+/* Raleway 700 normal, Roboto 500 normal, Roboto 900 normal, Roboto 700 normal, Roboto 400 normal */
+
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --title-text-color: #212121;
+  --primary-bacgr-color: #2f303a;
+  --second-backgr-color: #f5f4fa;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #fff;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.page-header {
+}
+
+/* logo */
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo:hover,
+.logo:focus {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.logo-studio-header {
+  color: #000000;
+}
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+/* site auth navigation */
+
+.auth-nav,
+.site-nav {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link {
+  color: #212121;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* hero section */
+
+.hero {
+  background-color: var(--primary-bacgr-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.hero .button:hover {
+  color: var(--accent-color);
+  background-color: #fff;
+}
+
+/* section */
+
+.section {
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* features */
+
+.feature-list .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+}
+
+.feature-list .list-text {
+  line-height: 1.714;
+}
+
+/* our team */
+
+.our-team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
+
+.accent-bg-color {
+  background-color: var(--second-backgr-color);
+}
+
+.our-team-list .list-text {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
+
+/* portfolio section */
+
+.portfolio-filter .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .list-text {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--second-backgr-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--primary-bacgr-color);
+}
+
+/* у данного тега пришлось указать font-style: normal т.к. по умолчанию 
+почему то браузер устанавливает italic  */
+address {
+  font-style: normal;
+}
+
+.address-text {
+  color: #ffffff;
+}
