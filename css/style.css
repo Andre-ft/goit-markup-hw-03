@@ -226,6 +226,10 @@ address {
   font-style: normal;
 }
 
+.footer-nav-list .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .address-text {
   color: #ffffff;
 }
