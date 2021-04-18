@@ -46,10 +46,39 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* .page-header {
-} */
+.button {
+  border: 1px solid transparent;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: var(--title-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
 
 /* logo */
 
@@ -110,6 +139,9 @@ body {
 
 .hero {
   background-color: var(--primary-bacgr-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -120,9 +152,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero .button {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -130,6 +165,12 @@ body {
   letter-spacing: 0.06em;
   color: #fff;
   background-color: var(--accent-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  min-width: 200px;
 }
 
 .hero .button:hover {
@@ -137,10 +178,11 @@ body {
   background-color: #fff;
 }
 
-/* section */
+/* section feature */
 
-/* .section {
-} */
+.feature .section-title {
+  display: none;
+}
 
 .section-title {
   font-weight: 700;
@@ -150,21 +192,24 @@ body {
   color: var(--title-text-color);
 }
 
-.title {
-  color: var(--title-text-color);
-}
-
 /* features */
+
+.section.feature {
+  padding-bottom: 0px;
+}
 
 .feature-list .title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-list .list-text {
   line-height: 1.714;
+  padding: 0;
+  margin: 0;
 }
 
 /* our team */
@@ -211,15 +256,15 @@ body {
 
 /* Button */
 
-.button {
+.portfolio-filter .button {
   color: var(--title-text-color);
   background-color: var(--second-backgr-color);
   border-radius: 4px;
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
   color: #fff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
