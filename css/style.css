@@ -74,11 +74,27 @@ body {
 
 .title {
   color: var(--title-text-color);
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 /* header */
+
+/* .page-header {
+} */
+
+.page-header .container {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
 
 /* logo */
 
@@ -106,6 +122,12 @@ body {
   color: #ffffff;
 }
 
+.page-header .logo,
+.site-nav,
+.auth-nav {
+  vertical-align: middle;
+}
+
 /* site auth navigation */
 
 .auth-nav,
@@ -113,6 +135,16 @@ body {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  display: flex;
+}
+
+.auth-nav li:not(:last-child),
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  margin-left: 93px;
 }
 
 .link {
@@ -125,6 +157,13 @@ body {
 
 .site-nav .link {
   color: #212121;
+}
+
+.auth-nav .link,
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav .link:hover,
@@ -190,6 +229,7 @@ body {
   line-height: 1.167;
   text-align: center;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 /* features */
@@ -229,6 +269,17 @@ body {
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
+  margin: 0;
+}
+
+.our-team-list img {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.our-team-list li {
+  background-color: #fff;
+  padding-bottom: 30px;
 }
 
 /* portfolio section */
@@ -275,6 +326,8 @@ body {
 
 footer {
   background-color: var(--primary-bacgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* у данного тега пришлось указать font-style: normal т.к. по умолчанию 
@@ -289,4 +342,16 @@ address {
 
 .address-text {
   color: #ffffff;
+  padding: 0;
+  margin: 0 0 9px 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+address li:first-child {
+  margin: 0 0 9px 0;
 }
