@@ -147,6 +147,10 @@ nav {
   margin-left: 93px;
 }
 
+.page-header .auth-nav {
+  margin-left: auto;
+}
+
 .link {
   text-decoration: none;
 }
@@ -197,19 +201,21 @@ nav {
 
 .hero .button {
   display: inline-block;
+  padding: 10px 32px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  min-width: 200px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: #fff;
   background-color: var(--accent-color);
   border: 0;
   border-radius: 4px;
-  padding: 10px 32px;
-  margin-top: 0;
-  margin-bottom: 0px;
-  min-width: 200px;
 }
 
 .hero .button:hover {
@@ -236,6 +242,11 @@ nav {
 
 .section.feature {
   padding-bottom: 0px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-list .title {
@@ -284,13 +295,16 @@ nav {
 
 /* portfolio section */
 
-.portfolio-filter .button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+main > h1 {
+  display: none;
+}
+
+.section > h2 {
+  display: none;
+}
+
+.portfolio-filter {
+  display: flex;
 }
 
 .portfolio-list .title {
@@ -305,9 +319,15 @@ nav {
   line-height: 1.875;
 }
 
-/* Button */
+/* portfolio-filter Buttons */
 
 .portfolio-filter .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
   color: var(--title-text-color);
   background-color: var(--second-backgr-color);
   border-radius: 4px;
