@@ -311,15 +311,19 @@ nav {
   margin: 0;
 }
 
-.our-team-list img {
+/* .our-team-list img {
   padding: 0;
   margin: 0 0 30px 0;
+} */
+
+.our-team-list .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team-list li {
   width: calc((100% - 90px) / 4);
   background-color: #fff;
-  padding-bottom: 30px;
 }
 
 .our-team-list li + li {
@@ -339,7 +343,7 @@ main > h1 {
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-list {
@@ -425,7 +429,7 @@ address {
   font-style: normal;
 }
 
-.footer-nav-list .link {
+footer .auth-nav .link {
   color: rgba(255, 255, 255, 0.6);
 }
 
